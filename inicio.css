@@ -1,0 +1,149 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* CORPO */
+body{
+    background:#F2F0E7;
+    color:#2D2D2D;
+    text-align: left;
+}
+
+/* MENU */
+.sidebar{
+    width:100%;
+    background:#31411F;
+    padding:15px 30px;
+    position: absolute;right: 0;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    gap:15px;
+    z-index:1000;
+    border-bottom:3px solid #DAD4C4;
+     justify-content: flex-end;
+    
+}
+
+
+.sidebar a,
+.sidebar button{
+    text-decoration:none;
+    color:white;
+    background:#566941;
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:15px;
+    
+}
+
+.sidebar a:hover,
+.sidebar button:hover{
+    background:#6B7C57;
+   
+}
+
+/* CONTEÚDO */
+.content{
+    padding:120px 50px 50px;
+   
+}
+.layout{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+}
+.texto{
+    width:45%;
+}
+
+/* TÍTULO */
+.content h1{
+    font-size:50px;
+    color:#31411F;
+    margin-bottom:20px;
+    text-align: left;
+}
+
+.content p{
+    font-size:18px;
+    max-width:600px;
+    margin-bottom: 40px;
+    line-height:1.6;
+    text-align: left;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:flex-start;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+    align-items: flex-start;
+    
+}
+
+.card{
+    background:#FFFFFF;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #DAD4C4;
+   box-shadow:0 4px 10px rgba(0,0,0,0.08);
+   justify-content:flex-start;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#E5E1D5;
+}
+
+.card h3{
+    color:#31411F;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:15px;
+    margin:0;
+}
+
+/* EFEITO DE FUNDO */
+body{
+    background:
+        linear-gradient(
+            rgba(167, 163, 146, 0.85),
+            rgba(167, 162, 139, 0.85)
+        ),
+        url("https://images.creativefabrica.com/products/previews/2024/10/17/LpILThT9z/2nZR1VtdoYvpxH2layzaYXeZwEX-desktop.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#footer{
+    background-color: #31411F;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#footer img{
+    width: 100px;
+    margin-right: 50px;
+}
+#footer p{
+    color: #E5E1D5;
+    margin-right: 30px;
+}

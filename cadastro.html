@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastrar contato</title>
+</head>
+<body>
+    <section class="container">
+        <header id="menu">
+            <img src="SchoolConnect.png" id="logo">
+            <nav id="navegacao">
+                <a href="">Home</a>
+                <br>
+                <a href="listagem.html">Contatos</a>
+                <br>
+                <a href="projetos.html">Projetos</a>
+                <br>
+            </nav>  
+        </header>
+
+        <main id="principal">
+            <a href="listagem.html"><button id="voltar">← Voltar</button></a>
+            <div class="cadastro">
+                <header id="parte1">
+                    <h1 class="titulo" id="h1">Novo contato</h1>
+                    <p class="titulo" id="p">Preencha as informações abaixo: </p>
+                        <div>
+                            <label for="foto" class="avatar-container">
+                                <img id="preview" src="Avatar2.png"><input type="file" id="foto" accept="image/*">
+                            </label>
+                        </div>
+                </header>
+                <div id="dados">
+                    <form>
+                        <div class="campo">
+                            <p>Nome completo</p>
+                            <input type="text" placeholder="Digite o nome do contato..." id="nome" required>
+                        </div>
+                        <div class="campo">
+                            <p>Telefone</p>
+                            <input type="tel" placeholder="(88) 99999-9999" id="telefone" required>
+                        </div>
+                        <div class="campo">
+                            <p>E-mail</p>
+                            <input type="email" placeholder="nome@email.com" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <p>Curso</p>
+                            <select id="curso" required>
+                                <option>Selecione um curso</option>
+                                <option>Administração</option>
+                                <option>Desenvolvimento de Sistemas</option>
+                                <option>Enfermagem</option>
+                                <option>Informática</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <p>Série</p>
+                            <select id="serie" required>
+                                <option>Selecione uma série</option>
+                                <option>1º ano do ensino médio</option>
+                                <option>2º ano do ensino médio</option>
+                                <option>3º ano do ensino médio</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button id="proximo" onclick="salvarDados()">Salvar contato</button>
+        </main>
+    </section>
+    <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    background: #F2F0E7;
+    padding: 0;
+    margin-bottom: 0%;
+    text-decoration: none;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 49px;
+    gap: 0.5px;
+}
+#menu{
+    display: block;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 200px;
+    height: 700px;
+    border-radius: 50px;
+    background: #31411F;
+    border: 1px solid #F3E8FF;
+    box-shadow: 0 4px 12px rgba(126, 109, 143, 0.08);
+}
+#logo{
+    margin-top: 15px;
+    width: 90px;
+    border-radius: 80px;
+
+}
+a{
+    text-decoration: none;
+    color: #A5AE9D;
+    margin-top: 20px;
+}
+a:hover{
+    color: #F2F0E7;
+    font-size: 18px;
+}
+#navegacao{
+    margin-top: 100px;
+    margin-bottom: 80%;
+    line-height: 10px;
+    display: grid;
+    gap: 10px;
+}
+#voltar{
+    border: none;
+    color:#C2B59B;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 900px;
+}
+#voltar:hover{
+    color: #31411F;
+}
+#proximo{
+    border: none;
+    color:#C2B59B;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 900px;
+}
+#proximo:hover{
+    color: #31411F;
+}
+.titulo{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    margin-bottom:20px;
+    margin-left: 40px;
+    text-align: left;
+}
+#h1{
+    font-size:40px;
+    color:#31411F;
+}
+#p{
+    color:#666;
+    font-size:16px;
+}
+#principal{
+    height: 90%;
+    width: 1000px;
+    margin-left: 5px;
+    display:block;
+    align-items:center;
+    margin-top:30px;
+}
+.cadastro{
+    display:flex;
+    align-items:flex-start;
+    gap:50px;
+    margin-top:30px;
+}
+#foto{
+    display:none;
+}
+
+.avatar-container{
+    position:relative;
+    width:100px;
+    height:100px;
+    cursor:pointer;
+
+}
+
+.avatar-container img{
+    width:50%;
+    height:50%;
+    border-radius:100%;
+    object-fit:cover;
+}
+
+#preview{
+    width:300px;
+    height:300px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    overflow:hidden;
+}
+#parte1{
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+}
+#dados{
+    display: block;
+    justify-content: center;
+    width: 200px;
+    height: 500px;
+    margin-left: 250px;
+}
+#dados form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
