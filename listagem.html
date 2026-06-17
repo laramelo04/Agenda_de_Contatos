@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listagem.css">
+    <title>Lista de contatos</title>
+</head>
+<body>
+    <section class="container">
+        <header id="menu">
+            <img src="SchoolConnect.png" id="logo">
+            <nav id="navegacao">
+                <a href="">Home</a>
+                <br>
+                <a href="listagem.html">Contatos</a>
+                <br>
+                <a href="">Projetos</a>
+                <br>
+                <a href="Lia.html">Assistente Lia</a>
+                <br>
+                <a href="">Meu perfil</a>
+            </nav>  
+        </header>
+
+        <main id="principal">
+            <a href="cadastro.html"><button id="novoContato">+ Novo contato</button></a>
+            <div class="cadastro">
+                <header id="parte1">
+                    <div id="busca">
+                        <span class="lupa">⌕</span>
+                        <input type="text" placeholder="Buscar contato..." id="buscar">
+                    </div>
+                    <select id="selectCurso">
+                        <option>Todos os cursos</option>
+                        <option>Administração</option>
+                        <option>Desenvolvimento de Sistemas</option>
+                        <option>Enfermagem</option>
+                        <option>Informática</option>
+                    </select>
+                </header>
+                <div id="dados">
+                    <table  id="tabela">
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nome</th>
+                            <th>Curso</th>
+                            <th>Telefone</th>
+                            <th>E-mail</th>
+                            <th>Ações</th>
+                        </tr>
+                        <tr></tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+<script src="listagem.js"></script>
+</html>
