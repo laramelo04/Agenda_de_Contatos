@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Novo Projeto</title>
+</head>
+<body>
+    <section class="container">
+        <header id="menu">
+            <img src="SchoolConnect.png" id="logo">
+            <nav id="navegacao">
+                <a href="">Home</a>
+                <br>
+                <a href="listagem.html">Contatos</a>
+                <br>
+                <a href="">Projetos</a>
+                <br>
+            </nav>  
+        </header>
+
+        <main id="principal">
+            <a href="listagem.html"><button id="voltar">← Voltar</button></a>
+            <div class="cadastro">
+                <header id="parte1">
+                    <h1 class="titulo" id="h1">Novo projeto</h1>
+                    <p class="titulo" id="p">Preencha as informações abaixo: </p>
+                        
+                </header>
+                <div id="dados">
+                    <form>
+                        <div class="campo">
+                            <p>Nome do projeto</p>
+                            <input type="text" placeholder="Digite o nome do projeto..." id="projeto" required>
+                        </div>
+                        <div class="campo">
+                            <p>Máteria/Área</p>
+                            <input type="tel" placeholder="ex.:Robótica..." id="telefone" required>
+                        </div>
+                        <div class="campo">
+                            <p>Integrantes</p>
+                            <input type="tel" placeholder="Digite os nomes dos integrantes..." id="telefone" required>
+                        </div>
+                        <div class="campo">
+                            <p>Prazo de entrega</p>
+                            <input type="email" placeholder="ex.:17/10/2026" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <p>Status</p>
+                            <select id="curso" required>
+                                <option>Em planejamento</option>
+                                <option>Em andamento</option>
+                                <option>Concluído</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button id="proximo" onclick="salvarProjetos()">Salvar projeto</button>
+        </main>
+    </section>
+</body>
+</html>
