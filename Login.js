@@ -52,7 +52,7 @@ btnLogin.addEventListener("click", function () {
     if (email === usuarioSalvo.email && senha === usuarioSalvo.senha) {
         localStorage.setItem("usuarioLogado", "true");
         alert("Login realizado com sucesso!");
-
+        window.location.href = "home.html"
         atualizarMenu();
 
     } else {
