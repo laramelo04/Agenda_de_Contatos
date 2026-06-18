@@ -96,5 +96,5 @@ function salvarDados(){
     document.getElementById("serie").selectedIndex = 0;
     document.getElementById("preview").src = "Avatar2.png";
 
-    mostrarLista();
+    window.location.href = "home.html";
 }

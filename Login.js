@@ -1,5 +1,6 @@
 let emailInput = document.getElementById("email");
 let senhaInput = document.getElementById("senha");
+let nomeInput = document.getElementById("nome");
 
 let btnLogin = document.getElementById("btnLogin");
 let btnCadastro = document.getElementById("btnCadastro");
@@ -22,15 +23,20 @@ function atualizarMenu() {
 
 btnCadastro.addEventListener("click", function () {
 
+    let nome = nomeInput.value;
     let email = emailInput.value;
     let senha = senhaInput.value;
-    if (email === "" || senha === "") {
 
+    if (nome === "" || email === "" || senha === "") {
         alert("Preencha todos os campos.");
         return;
     }
 
-    let usuario = { email, senha };
+    let usuario = {
+        nome,
+        email,
+        senha
+    };
 
     localStorage.setItem("usuario", JSON.stringify(usuario));
 
